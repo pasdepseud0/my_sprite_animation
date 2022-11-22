@@ -10,10 +10,10 @@
 int main(void)
 {
     window_t *window = malloc(sizeof(window_t));
-    thief_t *sprite = malloc(sizeof(thief_t));
+    bird_t *sprite = malloc(sizeof(bird_t));
 
     init_window(window);
-    init_thief(sprite);
+    init_bird(sprite);
 
     if (!window->window)
         return(84);
@@ -26,9 +26,9 @@ int main(void)
                 sfRenderWindow_close(window->window);
         }
         sfRenderWindow_clear(window->window, sfBlack);
-        disp_thief(window, sprite);
+        disp_bird(window, sprite);
 
-        move_thief(sprite, 34, 100);
+        ani_bird(sprite, 34, 100);
         sfRenderWindow_display(window->window);
     }
     free(sprite);

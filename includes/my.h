@@ -19,11 +19,11 @@ int my_strlen(char const *str);
 void init_window(window_t *window);
 int displaywindsprite(sfRenderWindow *window, sfSprite *sprite,sfIntRect rect);
 
-void init_thief(thief_t *sprite);
-void disp_thief(window_t *window, thief_t *sprite);
-void move_thief(thief_t *sprite, int offset, int max_value);
+void init_bird(bird_t *sprite);
+void disp_bird(window_t *window, bird_t *sprite);
+void ani_bird(bird_t *sprite, int offset, int max_value);
 
 void init_floor(object_t *sprite);
 object_t *create_floor(window_t *window, char *assets, int x);
-void disp_floor(window_t *window, object_t **sprite, thief_t *chara);
+void disp_floor(window_t *window, object_t **sprite);
 void move_floor(object_t *sprite, int offset, int max_value);

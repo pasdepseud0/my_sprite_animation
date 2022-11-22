@@ -31,7 +31,7 @@ typedef struct window_st //fenetre
 
 }window_t;
 
-typedef struct thief_st //perso
+typedef struct //perso
 {
     sfIntRect rect;
     sfTexture *texture;
@@ -39,7 +39,7 @@ typedef struct thief_st //perso
     sfSprite *chara;
     sfVector2f pos;
 
-}thief_t;
+}bird_t;
 
 typedef struct   //sol
 {
